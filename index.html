@@ -4,139 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
     <title>English Janala | Best Platform for Learning English</title>
 
     <link rel="stylesheet" href="./style.css">
-
-
-    <!-- Fav Icon -->
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Font integration -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
-
-
-    <!--  Tailwind+DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
-
-
 
 <body>
     <!-- Navbar Section -->
     <header>
-        <div class="navbar bg-base-100 shadow-sm">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <a href="" class=""> <i class="fa-solid fa-circle-question"></i>
-                            FAQ</a>
-                        <a href="" class=""><i class="fa-solid fa-book-open"></i> Learn</a>
-                        <a href="" class=""> <i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</a>
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar-start">
+                    <a href="/" class="logo-container">
+                        <span class="text-lg font-bold">English</span>
+                        <img src="./assets/logo.png" alt="English Janala Logo">
+                        <span class="font-bangla text-lg font-semibold">জানালা</span>
+                    </a>
                 </div>
-                <a href="" class=" flex items-center gap-1">
-                    <span class="text-lg font-bold">English</span>
-                    <img src="./assets/logo.png" alt="">
-                    <span class="font-bangla text-lg font-semibold ">জানালা</span>
-                </a>
-            </div>
-            <div class="navbar-end hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 space-x-4 ">
-                    <a href="" class="btn btn-outline btn-primary"> <i class="fa-solid fa-circle-question"></i> FAQ</a>
-                    <a href="" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i> Learn</a>
-                    <a href="" class="btn btn-outline btn-primary"> <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                        LogOut</a>
-                </ul>
-            </div>
-
+                <div class="navbar-end">
+                    <ul class="nav-links">
+                        <li><a href="#" class="nav-btn"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        <li><a href="#" class="nav-btn"><i class="fa-solid fa-book-open"></i> Learn</a></li>
+                        <li><a href="#" class="nav-btn"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+                    </ul>
+                    <!-- Mobile Hamburger (Simplified for now) -->
+                    <button id="mobile-menu-toggle" class="nav-btn lg:hidden" style="display: none;">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
         </div>
     </header>
-    <!-- Hero section -->
-    <section class=" flex-col-reverse md:flex-row flex gap-10 justify-between items-center py-5 w-11/12 mx-auto">
-        <div class="content flex-1 text-center md:text-left">
-            <h2 class="text-4xl font-bold mb-4"><span class="text-[#00BCFF] ">English</span> is easy!!</h2>
-            <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে
-                চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 
-            <div class="space-y-5 mt-5">
+    <main class="container">
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2><span class="highlight">English</span> is easy!!</h2>
+                <p class="font-bangla">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
 
-                <input type="text" class="input" placeholder="Enter Your Name" />
-                <input type="password" class="input" placeholder="..........." /> <br>
-                <button class="btn btn-primary">Get Started</button>
-            </div>
-        </div>
-
-        <div class="image flex-1">
-            <img src="./assets/hero-student.png" alt="">
-        </div>
-    </section>
-    <!-- Lessons button section -->
-    <section>
-        <h2 class="text-4xl text-center font-bold mb-4"><span class="text-[#00BCFF] "> Let's </span> Learn Vocabularies
-        </h2>
-
-        <div id="level-container" class=" flex gap-5 flex-wrap justify-center">
-
-        </div>
-    </section>
-
-    <!-- Word.card section -->
-    <section id="word-container" class="bg-gray-100 grid grid-rows-1 md:grid-cols-3  gap-5 w-11/12 mx-auto my-10 p-10">
-
-        <div class="text-center col-span-full space-y-2">
-            <p class="font-bangla text-xs text-gray-500 ">আপনি এখনো কোন Lesson Select করেন নি</p>
-            <h2 class="font-bangla text-2xl text-gray-700 font-medium">একটি Lesson Select করুন।</h2>
-        </div>
-
-       
-
-    </section>
-
-
-     <!-- Open the modal using ID.showModal() method -->
-        <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
-        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-            <div class="modal-box">
-                <h3 class="text-lg font-bold">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                    <form method="dialog">
-                        <!-- if there is a button in form, it will close the modal -->
-                        <button class="btn">Close</button>
-                    </form>
+                <div class="auth-form">
+                    <input type="text" class="input-field" placeholder="Enter Your Name">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <button class="btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></button>
                 </div>
             </div>
-        </dialog>
 
+            <div class="hero-image">
+                <img src="./assets/hero-student.png" alt="Student studying">
+            </div>
+        </section>
 
+        <!-- Lessons section -->
+        <section id="lessons-section">
+            <h2><span class="highlight">Let's</span> Learn Vocabularies</h2>
+            <div id="level-container" class="level-grid">
+                <!-- Lessons buttons will be injected here -->
+                <div class="loading-spinner">Loading levels...</div>
+            </div>
+        </section>
 
+        <!-- Words section -->
+        <section id="words-section">
+            <div id="word-container" class="word-grid">
+                <div class="empty-state">
+                    <p class="font-bangla" style="color: var(--text-muted); font-size: 0.9rem;">আপনি কোনো Lesson সিলেক্ট করেননি।</p>
+                    <h3 class="font-bangla" style="font-size: 2rem;">একটি Lesson সিলেক্ট করুন!</h3>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <div id="modal-body-container">
+                <div class="modal-header">
+                    <h3 id="modal-word-title" class="word-title">Word Title</h3>
+                </div>
+                <div class="modal-body">
+                    <p><strong>Meaning:</strong> <span id="modal-meaning">...</span></p>
+                    <p><strong>Pronunciation:</strong> <span id="modal-pronunciation">...</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        
-
+    <!-- Footer Script -->
     <script src="./script/index.js"></script>
 </body>
 
